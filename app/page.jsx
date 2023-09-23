@@ -1,7 +1,8 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Feed from '../components/Feed'; // Adjust the import path if necessary
-import styles from '../styles/background.css';
+import styles from '@styles/background.css';
+import Particles from '@components/particles'; // Import the Particles component
 
 const Home = () => {
   return (
@@ -17,6 +18,13 @@ const Home = () => {
           discover, create, and share creative promptsss
         </p>
         <Feed />
+        <Particles
+         
+          quantity={100}
+          className={`absolute inset-0 -z-10 animate-fade-in bg-black ${
+					process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+				}`}
+        />
       </section>
     </Layout>
   );
