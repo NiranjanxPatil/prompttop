@@ -2,8 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Feed from '../components/Feed'; // Adjust the import path if necessary
 import styles from '@styles/background.css';
-import Particles from '@components/particles'; // Import the Particles component
-
+import Particles from "../components/particles";
 const Home = () => {
   return (
     <Layout>
