@@ -19,11 +19,9 @@ const Home = () => {
         </p>
         <Feed />
         <Particles
-         
+          className="absolute inset-0 -z-10 animate-fade-in  bg-slate-900"
           quantity={100}
-          className={`absolute inset-0 -z-10 animate-fade-in bg-black ${
-					process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-				}`}
+          
         />
       </section>
     </Layout>
