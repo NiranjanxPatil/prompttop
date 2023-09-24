@@ -16,6 +16,9 @@ const Home = () => {
           Promptopia is an open-source AI prompting tool for the modern world to
           discover, create, and share creative prompts
         </p>
+        <h2 className='head_text text-center'>
+          Prompts which Catalyze
+        </h2>
         <Feed />
         <Particles
           className="absolute inset-0 -z-10 animate-fade-in  bg-slate-900"
