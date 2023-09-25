@@ -1,12 +1,16 @@
 import React from 'react';
-import Layout from '../components/Layout';
+
 import Feed from '../components/Feed'; // Adjust the import path if necessary
-import styles from '@styles/background.css';
 import Particles from "../components/particles";
 const Home = () => {
   return (
-    <Layout>
-      <section className={`w-full flex-center flex-col ${styles.container}`}>
+   <div>
+    <Particles
+				className="absolute inset-0 -z-10 animate-fade-in "
+				quantity={100}
+			/>
+   
+      <section className="w-full flex-center flex-col ">
         <h1 className='head_text text-center'>
           Discover & Share
           <br className='max-md:hidden' />
@@ -16,17 +20,11 @@ const Home = () => {
           Promptopia is an open-source AI prompting tool for the modern world to
           discover, create, and share creative prompts
         </p>
-        <h2 className='head_text text-center'>
-          Prompts which Catalyze
-        </h2>
+      
         <Feed />
-        <Particles
-          className="absolute inset-0 -z-10 animate-fade-in  bg-slate-900"
-          quantity={100}
-          
-        />
+        
       </section>
-    </Layout>
+   </div>
   );
 };
 

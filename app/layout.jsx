@@ -11,9 +11,7 @@ export const metadata = {
 const RootLayout = ({ children }) => (
   <html lang='en'>
     <body
-				className={`bg-black ${
-					process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-				}`}
+				className= "bg-slate-700 "
 			>
       <Provider>
         <div className='main'>
