@@ -11,7 +11,7 @@ export const metadata = {
 const RootLayout = ({ children }) => (
   <html lang='en'>
     <body
-				className= "bg-slate-700 "
+				
 			>
       <Provider>
         <div className='main'>

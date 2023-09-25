@@ -5,10 +5,7 @@ import Particles from "../components/particles";
 const Home = () => {
   return (
    <div>
-    <Particles
-				className="absolute inset-0 -z-10 animate-fade-in "
-				quantity={100}
-			/>
+   
    
       <section className="w-full flex-center flex-col ">
         <h1 className='head_text text-center'>
@@ -18,7 +15,7 @@ const Home = () => {
         </h1>
         <p className='desc text-center'>
           Promptopia is an open-source AI prompting tool for the modern world to
-          discover, create, and share creative promptss
+          discover, create, and share creative prompts
         </p>
       
         <Feed />
