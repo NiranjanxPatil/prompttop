@@ -65,7 +65,7 @@
   opacity: 0.15;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 400px) {
   .main {
     padding: 0;
   }
@@ -74,7 +74,7 @@
 /* Tailwind Styles */
 
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  @apply relative z-10 flex justify-center items-center flex-col sm:px-16 px-6;
 }
 
 .black_btn {
