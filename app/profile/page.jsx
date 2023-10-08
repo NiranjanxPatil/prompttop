@@ -3,10 +3,12 @@
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Particles from "@components/particles";
 
 import Profile from "@components/Profile";
 
 const MyProfile = () => {
+  
   const router = useRouter();
   const { data: session } = useSession();
 
@@ -48,13 +50,21 @@ const MyProfile = () => {
   };
 
   return (
-    <Profile
-      name='My'
-      desc='Welcome to your personalized profile page. Share your exceptional prompts and inspire others with the power of your imagination'
-      data={myPosts}
-      handleEdit={handleEdit}
-      handleDelete={handleDelete}
-    />
+    <div>
+      <Particles
+        className="absolute inset-0 -z-10 animate-fade-in bg-black"
+        quantity={300} 
+        speed={1}
+      />
+          <Profile
+          name='My'
+          desc='Welcome to your personalized profile page. Share your exceptional prompts and inspire others with the power of your imagination'
+          data={myPosts}
+          handleEdit={handleEdit}
+          handleDelete={handleDelete}
+          />
+    </div>
+    
   );
 };
 

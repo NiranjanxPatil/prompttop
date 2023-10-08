@@ -42,8 +42,7 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
           />
 
           <div className='flex flex-col'>
-            <h3 className='font-satoshi font-semibold text-glow
-             text-gray-900'>
+            <h3 className='font-satoshi font-semibold text-gray-900'>
               {post.creator.username}
             </h3>
             <p className='font-inter text-sm text-gray-500'>
@@ -83,7 +82,7 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
             Edit
           </p>
           <p
-            className='font-inter text-sm orange_gradient cursor-pointer'
+            className='font-inter text-sm cursor-pointer bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent'
             onClick={handleDelete}
           >
             Delete
