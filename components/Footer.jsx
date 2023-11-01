@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { LazyMotion, domAnimation, useInView } from "framer-motion";
 import { ConnectMedia } from "@components/ConnectMedia";
+import Link from "next/link";
 
 export function AppFooter() {
 	const footerRef = useRef(null);
@@ -20,8 +21,11 @@ export function AppFooter() {
 				}}
 			>
 				<div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-5">
-					<p className="font-light">Copyright &copy; {year} Niranjan Patil</p>
-					<ConnectMedia />
+					<p className="font-light text-white">Copyright &copy; {year} Niranjan Patil</p>
+					<p className="font-light text-white">Refresh again if Database is not connet</p>
+					<Link href="http://niranjann.tec" className="text-white">
+						Connect with me
+					</Link>
 				</div>
 			</footer>
 	);
