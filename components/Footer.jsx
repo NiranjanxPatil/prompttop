@@ -23,7 +23,7 @@ export function AppFooter() {
 				<div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-5">
 					<p className="font-light text-white">Copyright &copy; {year} Niranjan Patil</p>
 					<p className="font-light text-white">Refresh again if Database is not connet</p>
-					<Link href="http://niranjann.tec" className="text-white">
+					<Link href="http://niranjann.tech" className="text-white">
 						Connect with me
 					</Link>
 				</div>
