@@ -7,7 +7,7 @@ const Home = () => {
     <div>
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in bg-black"
-        quantity={300} // Increase the quantity to 300 or any other value you prefer
+        quantity={200} // Increase the quantity to 300 or any other value you prefer
         speed={1} // Increase the speed to 0.5 or any other value you prefer
       />
       <section className="w-full flex-center flex-col ">
