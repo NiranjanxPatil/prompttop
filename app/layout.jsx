@@ -14,10 +14,10 @@ export const metadata = {
 // RootLayout component
 const RootLayout = ({ children }) => (
   <html lang='en'>
-    <head>
-      {/* Adding script for beam analytics */}
+    
+
       <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="cea78beb-0056-47f4-8382-00f1ed721ce1" async></script>
-    </head>
+    
     <body>
       <Provider>
         <div className='main'>
