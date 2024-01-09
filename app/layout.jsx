@@ -9,8 +9,7 @@ export const metadata = {
   description: "Discover & Share AI Prompts",
 };
 <script src="https://beamanalytics.b-cdn.net/beam.min.js" 
-data-token="cea78beb-0056-47f4-8382-00f1ed721ce1" a
-sync></script>
+data-token="cea78beb-0056-47f4-8382-00f1ed721ce1" async/>
 const RootLayout = ({ children }) => (
   <html lang='en'>
       <script
